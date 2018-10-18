@@ -1,6 +1,5 @@
 package it.sevenbits.workshop.matrix;
 
-import java.util.Arrays;
 import java.util.Random;
 public class Matrix {
     private final int CELL_MAX_VALUE = 100;
