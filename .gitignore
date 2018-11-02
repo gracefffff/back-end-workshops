@@ -1,5 +1,5 @@
 .idea/
-taarget/
+target/
 *.class
 *.jar
 *.iml
