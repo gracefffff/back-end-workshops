@@ -10,8 +10,7 @@ class StateMap {
 
     StateMap() {
         states = new HashMap<>();
-        State startListen = new State("MESSAGE_START");
-        State finishListen = new State("MESSAGE_FINISH");
+
         State listenState = new State("LISTEN");
         State stubSuspicion = new State("TRASH_SUSPICION");
 
@@ -29,7 +28,7 @@ class StateMap {
 
         states.put(new Pair<>(stubSuspicion, "MESSAGE"), stubSuspicion);
         states.put(new Pair<>(stubSuspicion, "TRASH"), defaultState);
-        states.put(new Pair<>(stubSuspicion, "MESSAGE_START"), listenState);
+        states.put(new Pair<>(stubSuspicion, "MESSAGE_START"), stubSuspicion);
         states.put(new Pair<>(stubSuspicion, "MESSAGE_FINISH"), defaultState);
     }
 
